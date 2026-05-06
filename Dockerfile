@@ -1,5 +1,5 @@
-From nginx: latest
-RUN sed -i 's/nginx/asma/g' /usr/share/nginx/html/index.html
-EXPOSE 80
+FROM nginx:latest
 
-Dockerfile (END)
+RUN sed -i 's/nginx/asma/g' /usr/share/nginx/html/index.html
+
+EXPOSE 80
