@@ -6,7 +6,7 @@ node{
     }
 
     stage('Build image') {
-        app = docker.build(asma/nginx)
+        app = docker.build("asma/nginx")
     } 
    
     stage('Run image') {
